@@ -109,24 +109,59 @@
     padding: var(--r);
     border-radius: 50%;
     box-shadow: 0 0 0 1000px rgba(182, 74, 72, 0.8);
-    bottom: attr();
+    bottom: calc(var(--r) * -1);
 }
 
 .box1 section::before {
     left: calc(var(--r) * -1);
-
 }
 
 .box2 section::before {
     right: calc(var(--r) * -1);
-
 }
 
 .content [class *="box"] section p {
     text-align: left;
     position: absolute;
+    width: 100%;
     top: 50%;
-    left: 5%;
     transform: translateY(-50%);
     /* z-index: 99; */
 }
+
+.content [class *="box"] section span {
+    /* 文字省略 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+}
+
+.content .box1 section span {
+    left: calc(var(--r) + 5%);
+}
+
+.content [class *="box"] a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+}
+
+.content .box2 a {
+    right: calc(var(--r) + 5%);
+}
+
+
+.content [class *= "box"] img {
+    width: 1.2em;
+    vertical-align: middle;
+}
+

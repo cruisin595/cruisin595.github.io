@@ -141,7 +141,7 @@
     left: 5%;
 }
 
-.box1 section span {
+.content .box1 section span {
     left: calc(var(--r) + 5%);
 }
 
@@ -155,7 +155,7 @@
     right: 5%;
 }
 
-.box2 a {
+.content .box2 a {
     right: calc(var(--r) + 5%);
 }
 

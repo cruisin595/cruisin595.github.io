@@ -1,161 +1,122 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+
 <head>
-<title>Slideshow</title>
-<meta charset="utf-8">
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<link href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+    <title>惠大外卖美食</title>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/box.css" type="text/css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <link rel="stylesheet" href="css/topimg.css" type="text/css" />
+
+
 </head>
+
 <body>
-  <style>
-    .a{
-      display: flex;
-      float: right;
-  
-  color: aqua;
-
-    }
-    * {
-  box-sizing: border-box;
-}
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: #33b5e5;
-  color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  font-size: 30px;
-  padding: 10px;
-  margin: 20px;
-}
-
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-  float: right;
-}
-
-.fotorama{
-  display: flex;
-  float:right;
-
-}
-.div1 {
-  width: 700px;
-  height: 400px;
-  border: 1px solid blue;
-  box-sizing: border-box;
-  border-radius: 25px;
-
-}
-
-.div2 {
-  width: 700px;
-  height: 400px;  
-  padding: 50px;
-  border: 1px solid red;
-  box-sizing: border-box;
-  float:right;
-  border-radius: 25px;
-}
-.div3 {
-  width: 700px;
-  height: 400px;
-  border: 1px solid blue;
-  box-sizing: border-box;
-  border-radius: 25px;
-}
-
-.div4 {
-  width: 700px;
-  height: 400px;  
-  padding: 50px;
-  border: 1px solid red;
-  box-sizing: border-box;
-  float:right;
-  border-radius: 25px;
-}
-
-  </style>
-
-
-
-
-
-
-
-<h1>Slideshow</h1>
-<div class="fotorama" data-autoplay="true">
-  <img src="photo1.jpg" data-caption="Golden Gate Bridge" alt="Golden Gate Bridge"  >     
-  
-  <img src="photo2.jpg" data-caption="Rocky Coastline" alt="Rocky Coastline">
-  <img src="photo3.jpg" data-caption="Clouds on the Coast" alt="Clouds on the Coast">
-  <img src="photo4.jpg" data-caption="Waterfall Near Big Sur" alt="Waterfall Near Big Sur">
-  <img src="photo5.jpg" data-caption="Waves Crashing on the Coast" alt="Waves Crashing on the Coast">
-  <img src="photo6.jpg" data-caption="Sunset on the Coast" alt="Sunset on the Coast">
-</div>
-
-<div class="row">
-  <div class="col-3 col-s-3 menu">
-    <ul>
-      <li>碳烤鸭腿饭为中苑食堂土耳其烤肉店的招牌菜<br><a href="baidu.com">更多了解碳烤鸭腿饭，点击查看详情</a></li>
-      <li><a href=" ">碳烤鸭腿饭，点击查看详情</a></li>
-      <li><a href="baidu.com">碳烤鸭腿饭，点击查看详情</li>
-      <li><a href="baidu.com">碳烤鸭腿饭，点击查看详情</li>
+    <!-- NAVIGATION -->
+    <ul class="topnav">
+        <a href="index.html"><img class="ico-img1" src="img/favicon.ico" /></a>
+        <a href="index.html"><img class="ico-img2" src="img/title.png" /></a>
+        <li class="float-right width-10"><a href="about.html">关于</a></li>
+        <li class="dropdown float-right width-10"><a href="#classification">分类</a>
+            <div class="dropdown-content">
+                <a href="rice.html">饭类</a>
+                <a href="noodle.html">面类</a>
+                <a href="drink.html">饮品</a>
+            </div>
+            <script src="js/dropdown_jquery.js"></script>
+        </li>
+        <li class="float-right width-10"><a class="active" href="index.html">首页</a></li>
     </ul>
-  </div>
+
+    <!-- TOP POS -->
+    <div id="top"></div>
+
+    <div class="topimg">
+        <div class="banner-imgBox">
+            <div class="banner-imgBox2">
+                <img src="img/banners/banner_1.jpg" alt="">
+                <img src="img/banners/banner_2.jpg" alt="">
+                <img src="img/banners/banner_3.jpg" alt="">
+            </div>
+            <div class="banner-imgBox-div">
+                <div class="ons">
+                    <div class="on"></div>
+                    <div class="on"></div>
+                    <div class="on"></div>
+                </div>
+            </div>
+            <img class="banner-imgBox-left" src="img/icon_right.png" onclick="marginLeft(false)">
+            <img class="banner-imgBox-right" src="img/icon_right.png" onclick="marginLeft(true)">
+        </div>
+        <script src="js/topimg.js"></script>
+    </div>
+
+    <!-- Bar -->
+    <div class="blank-bar">
+        <p class="bar-word"><span>|</span>&ensp;首页</p>
+    </div>
 
 
+    <!-- Content  -->
+    <main>
+        <div class="content">
+            <img class="hunger" src="img/hunger.svg" />
 
+            <div class="box1" id="classification">
+                <article>
+                    <h3>饭类</h3>
+                    <section>
+                        <p>Text 1</p>
+                    </section>
+                </article>
+            </div>
+            <div class="box2">
+                <article>
+                    <h3>面类</h3>
+                    <section>
+                        <p>Text 2</p>
+                    </section>
+                </article>
+            </div>
+            <div class="box3">
+                <article>
+                    <h3>更多</h3>
+                    <section>
+                        <p>Text 3</p>
+                    </section>
+                </article>
+            </div>
+            <div class="box4">
+                <article>
+                    <h3>饮品</h3>
+                    <section>
+                        <p>Text 4</p>
+                    </section>
+                </article>
+            </div>
+        </div>
 
+        <script src="js/boxchange_jquery.js"></script>
+    </main>
 
-</div>
-<h1>Slideshow</h1>
-<div class="fotorama" data-autoplay="true">
-  <img src="photo1.jpg" data-caption="Golden Gate Bridge" alt="Golden Gate Bridge">
-  <img src="photo2.jpg" data-caption="Rocky Coastline" alt="Rocky Coastline">
-  <img src="photo3.jpg" data-caption="Clouds on the Coast" alt="Clouds on the Coast">
-  <img src="photo4.jpg" data-caption="Waterfall Near Big Sur" alt="Waterfall Near Big Sur">
-  <img src="photo5.jpg" data-caption="Waves Crashing on the Coast" alt="Waves Crashing on the Coast">
-  <img src="photo6.jpg" data-caption="Sunset on the Coast" alt="Sunset on the Coast">
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+    <!-- Footer  -->
+    <footer>
+        <div class="footer-style copyright_">
+            <p>Copyright © 2022 - 2022 xxx. All Rights Reserved</p>
+        </div>
+    </footer>
 
-
-<div class="div2">Hello！</div>
-<div class="div1"> <ul>
-  <li>碳烤鸭腿饭为中苑食堂土耳其烤肉店的招牌菜<br><a href="baidu.com">更多了解碳烤鸭腿饭，点击查看详情</a></li>
-  <li><a href=" ">碳烤鸭腿饭，点击查看详情</a></li>
-  <li><a href="baidu.com">碳烤鸭腿饭，点击查看详情</li>
-  <li><a href="baidu.com">碳烤鸭腿饭，点击查看详情</li>
-</ul></div>
-<br>
-<div class="div4">Hello！</div>
-<div class="div3">现在，两个 div 的尺寸是一样的！</div>
-<br>
+    <div id="night">
+        <script src="js/night.js"></script>
+        <a href="javascript:void(0);" onclick="changeNightDay()">N/D</a>
+    </div>
+    <!-- TOP -->
+    <div id="guding">
+        <a href="#top">TOP</a>
+        <!-- <script src="js/top.js"></script> -->
+    </div>
 </body>
-</html>
- 
-

@@ -1,0 +1,158 @@
+。body {
+    align-content: center;
+}
+
+.header,
+.footer,
+.con2 {
+    width: 100%;
+}
+
+.header {
+    /*background-color: #00a2e8*/
+}
+
+.topback {
+    margin: 0;
+    width: 100%;
+    /* height: 20%;  */
+    position: relative;
+    top: 0;
+    z-index: -1;
+}
+
+.toptitle {
+    position: absolute;
+    top: 48%;
+    z-index: 1;
+}
+
+.nav {
+    margin: 0 100px 0 100px;
+    background-color: #ffb9ab;
+    height: 23px;
+    text-decoration: none;
+}
+
+.nav ul {
+    display: none;
+    border: 2px solid #888;
+    text-align: center;
+    list-style: none;
+    padding: 0 10px;
+}
+
+/*float: left;*/
+.nav1:hover>ul {
+    display: block;
+}
+
+.nav1>ul>li {
+    list-style: none;
+   
+}
+
+.nav>div {
+    display: inline-block;
+    width: 20%;
+}
+
+/*相对父级元素定位*/
+.nav>div>ul {
+    display: none;
+    float: left;
+}
+
+/*给ul加浮动*/
+.nav>div>div:hover ul {
+    top: 0;
+}
+
+/*display:block;*/
+.banner {
+    width: 80%;
+    min-height: 100px;
+    border: #660077 solid 1px;
+}
+
+/*高度靠内容撑大，这里设置一个最低高度*/
+.banner>div {
+    height: 80%;
+    width: 100%;
+    background-color: gold;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+/*banner里面的元素*/
+.banner>div:nth-child(1) {}
+
+.neirong2 {
+    width: 80%;
+    height: 500px;
+    background-color: #00a2e8;
+}
+
+.neirong3 {
+    width: 80%;
+    height: 500px;
+    background-color: darkolivegreen;
+}
+
+.foot {
+    width: 80%;
+    height: 500px;
+    background-color: yellow;
+}
+
+#guding {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    right: 10px;
+    bottom: 70px;
+}
+
+#guding a {
+    display: block;
+    width: 45px;
+    height: 45px;
+    padding-top: 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background: rgba(255, 247, 206, 0.5);
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    font-size: 12px;
+}
+
+#guding a:hover {
+    background: rgba(253, 238, 205, 0.8);
+    color: #59220d;
+}
+
+#guding a:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    margin: auto;
+    border-top: 1px solid #59220d;
+    border-right: 1px solid #59220d;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#rice-list,
+#noodle-list,
+#drink-list {
+    width: 100px;
+    line-height: 18px;
+    border: 2px solid #888;
+    padding: 0 10px;
+    display: none;
+}

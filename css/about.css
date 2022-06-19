@@ -1,0 +1,48 @@
+.head-list {
+    position: absolute;
+    /* width: 40%; */
+    /* height: 100%; */
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    /* overflow: hidden; */
+    /* background-color: aqua; */
+}
+
+.ab-head {
+    position: relative;
+    transform: translate(-50%, -50%);
+    /* top: 30%;
+    left: 60%; */
+    margin-bottom: 10px;
+}
+
+.ab-head img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 3px solid rgb(182, 74, 72);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+
+.ab-head p {
+    position: relative;
+    transform: translateY(-50%);
+    top: -32px;
+    left: 80px;
+    font-size: 16px;
+}
+
+.message-board {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 5%;
+    width: 50%;
+}
+
+

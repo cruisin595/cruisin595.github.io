@@ -1,3 +1,8 @@
+:root {
+    --theme-color: rgba(182, 74, 72);
+    --assist-color: rgb(255, 255, 255);
+}
+
 html,
 body {
     margin: 0;
@@ -155,7 +160,7 @@ ul.topnav li a.active {
     border-radius: 50%;
     text-decoration: none;
     text-align: center;
-    font-size: 12px;
+    font-size: 20px;
 }
 
 #night a:hover {
@@ -379,7 +384,7 @@ main {
 /* FOOTER  */
 footer {
     background-color: #B64A48;
-    height: 20%;
+    height: 10%;
     width: 100%;
     box-shadow: 0 -2px 2px 0 rgb(157, 157, 157);
 }
@@ -397,7 +402,7 @@ footer {
 
 .copyright_ {
     position: relative;
-    top: 65%;
+    top: 60%;
 }
 
 /* FOOTER END  */

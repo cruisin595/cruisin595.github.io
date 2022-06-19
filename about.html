@@ -6,6 +6,8 @@
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/about.css" type="text/css" />
+    <link rel="stylesheet" id="templatecss" type="text/css" href="css/form.css">
     <script src="js/main.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -31,7 +33,7 @@
 
     <!-- TOPIMG  -->
     <div class="topimg2">
-        <img src="img/favicon.ico" />
+        <img src="img/about_bg.jpg" />
     </div>
 
     <!-- Bar -->
@@ -45,14 +47,80 @@
         <div class="content">
             <img class="hunger" src="img/hunger.svg" />
 
+            <div class="head-list">
+                <div class="ab-head">
+                    <img src="img/ljj.jpg" />
+                    <p id="ljj"></p>
+                </div>
+                <div class="ab-head">
+                    <img src="img/lwl.jpg" />
+                    <p id="lwl"></p>
+                </div>
+                <div class="ab-head">
+                    <img src="img/ljl.jpg" />
+                    <p id="ljl"></p>
+                </div>
+            </div>
+
+            <div class="message-board">
+                <form action="" method="post" class="form">
+
+                    <h1>联系我们
+
+                        <span></span>
+
+                    </h1>
+
+                    <label>
+
+                        <span>昵称 :</span>
+
+                        <input id="name" type="text" name="name" placeholder="输入你的昵称" />
+
+                    </label>
+
+                    <label>
+
+                        <span>邮箱 :</span>
+
+                        <input id="email" type="email" name="email" placeholder="输入有效的邮箱" />
+
+                    </label>
+
+
+
+                    <label>
+
+                        <span>内容 :</span>
+
+                        <textarea id="message" name="message" placeholder="输入内容"></textarea>
+
+                    </label>
+
+                    <label>
+
+                        <span>&nbsp;</span>
+
+                        <input type="button" class="button" value="提交" onclick="submitShow()" />
+
+                    </label>
+
+                </form>
+            </div>
+
         </div>
     </main>
 
     <!-- Footer  -->
     <footer>
-        <div class="footer-style copyright_"><p>Copyright © 2022 - 2022 xxx. All Rights Reserved</p></div>
+        <div class="footer-style copyright_">
+            <p>©2022 By Wshape1</p>
+        </div>
     </footer>
-
+    <div id="night">
+        <script src="js/night.js"></script>
+        <a href="javascript:void(0);" onclick="changeNightDay()">◐</a>
+    </div>
     <!-- TOP -->
     <div id="guding">
         <a href="#top">TOP</a>

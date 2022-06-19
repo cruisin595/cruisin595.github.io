@@ -1,76 +1,117 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+
+<html lang="en">
 
 <head>
-    <title>惠大外卖美食推荐</title>
-    <meta charset="utf-8" />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/main.css" type="text/css" />
-    <link rel="stylesheet" href="css/box.css" type="text/css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/main.js"></script>
-    
-    <!-- <script>
-        function myFunction() {
-            var w = window.outerWidth;
-            var h = window.outerHeight;
-            var txt = "窗口大小: 宽度=" + w + ", 高度=" + h;
-            document.getElementById("demo").innerHTML = txt;
-        }
-    </script> -->
+
+    <meta charset="UTF-8">
+
+    <title>FORM Text</title>
+
+    <link rel="stylesheet" id="templatecss" type="text/css" href="css/basic-grey.css">
+
 </head>
 
 <body>
-    <!-- <div class="content"> -->
+
+    <form action="" method="post" class="basic-grey">
+
+        <h1>Contact Form
+
+            <span>Please fill all the texts in the fields.</span>
+
+        </h1>
+
+        <label>
+
+            <span>Themplate :</span>
+
+            <select id="template" name="themplate" onchange="changeStyle();">
+
+                <option value="basic-grey">basic-grey</option>
+
+                <option value="elegant-aero">elegant-aero</option>
+
+                <option value="smart-green">smart-green</option>
+
+                <option value="white-pink">white-pink</option>
+
+                <option value="bootstrap-frm">bootstrap-frm</option>
+
+                <option value="dark-matter">dark-matter</option>
+
+            </select>
+
+        </label>
+
+        <label>
+
+            <span>Your Name :</span>
+
+            <input id="name" type="text" name="name" placeholder="Your Full Name" />
+
+        </label>
+
+        <label>
+
+            <span>Your Email :</span>
+
+            <input id="email" type="email" name="email" placeholder="Valid Email Address" />
+
+        </label>
+
+
+
+        <label>
+
+            <span>Message :</span>
+
+            <textarea id="message" name="message" placeholder="Your Message to Us"></textarea>
+
+        </label>
+
+        <label>
+
+            <span>Subject :</span><select name="selection">
+
+                <option value="Job Inquiry">Job Inquiry</option>
+
+                <option value="General Question">General Question</option>
+
+            </select>
+
+        </label>
+
+        <label>
+
+            <span>&nbsp;</span>
+
+            <input type="button" class="button" value="Send" />
+
+        </label>
+
+    </form>
+
     <!-- <script>
-        function myfunction() {
-            //var dom = document.getElementsByClassName("box1");
-            //dom.style.height = dom.style.width * 0.5;
-            console.log(dom.style.width + "x " + dom.style.height);
+
+        function changeStyle() {
+
+            var template = document.getElementById("template");
+
+            var index = template.selectedIndex;
+
+            var templatevalue = template.options[index].value;
+
+            var templatecss = document.getElementById("templatecss");
+
+            templatecss.setAttribute("href", "css/" + templatevalue + ".css");
+
+            document.getElementsByTagName("form")[0].setAttribute("class", templatevalue);
+
         }
+
     </script> -->
 
-    <!-- <p id="demo">&nspar;</p> -->
-    <!-- <style>
-        .box1 {
-            
-        }
-    </style> -->
-    <div class="box1"><main>
-        <div class="content">
-            <img class="hunger" src="img/hunger.svg" />
-
-            <div class="box1">
-                <article>
-                    <h3>饭类</h3>
-                    <section>Text 1</section>
-                </article>
-            </div>
-            <div class="box2">
-                <article>
-                    <h3>面类</h3>
-                    <section>Text 2</section>
-                </article>
-            </div>
-            <div class="box3">
-                <article>
-                    <h3>更多</h3>
-                    <section>Text 3</section>
-                </article>
-            </div>
-            <div class="box4">
-                <article>
-                    <h3>饮品</h3>
-                    <section>Text 4</section>
-                </article>
-            </div>
-        </div>
-
-        <script src="js/boxchange_jquery.js"></script>
-    </main>
-        
-
-    <!-- </div> -->
 </body>
 
 </html>

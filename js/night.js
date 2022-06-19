@@ -1,3 +1,3 @@
 function changeNightDay() {
-    alert(666)
+    console.log("changeNightDay()");
 }

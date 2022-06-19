@@ -1,9 +1,11 @@
 :root {
-    --r: 15%;
+    --r: 18%;
+    --d-x: calc(var(--r) * -1.2);
+    --d-y: calc(var(--r) * -2.2);
     --w: 30%;
     --h: calc(var(--w) / 2.0);
     --top-base: 20%;
-    --top-add: 30%;
+    --bottom-base: 20%;
 }
 
 /* 2 1
@@ -37,8 +39,8 @@
 }
 
 .box1::before {
-    left: calc(var(--r) * -1);
-    bottom: calc(var(--r) * -1);
+    left: var(--d-x);
+    bottom: var(--d-y);
 }
 
 .box2 {
@@ -47,28 +49,28 @@
 }
 
 .box2::before {
-    right: calc(var(--r) * -1);
-    bottom: calc(var(--r) * -1);
+    right: var(--d-x);
+    bottom: var(--d-y);
 }
 
 .box3 {
     left: 68%;
-    top: calc(var(--top-base) + var(--top-add));
+    bottom: var(--bottom-base);
 }
 
 .box3::before {
-    left: calc(var(--r) * -1);
-    top: calc(var(--r) * -1);
+    left: var(--d-x);
+    top: var(--d-y);
 }
 
 .box4 {
     left: 32%;
-    top: calc(var(--top-base) + var(--top-add));
+    bottom: var(--bottom-base);
 }
 
 .box4::before {
-    right: calc(var(--r) * -1);
-    top: calc(var(--r) * -1);
+    right: var(--d-x);
+    top: var(--d-y);
 }
 
 .content [class *="box"] article {
@@ -109,15 +111,15 @@
     padding: var(--r);
     border-radius: 50%;
     box-shadow: 0 0 0 1000px rgba(182, 74, 72, 0.8);
-    bottom: calc(var(--r) * -1);
+    bottom: var(--d-y);
 }
 
 .box1 section::before {
-    left: calc(var(--r) * -1);
+    left: var(--d-x);
 }
 
-.box2 section::before {
-    right: calc(var(--r) * -1);
+.box2 section::before { 
+    right: var(--d-x);
 }
 
 .content [class *="box"] section p {

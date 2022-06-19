@@ -36,3 +36,7 @@ function submitShow() {
     xmlHttp.open("GET", "info.txt", true);
     xmlHttp.send(null);
 }
+
+function removeMeta() {
+    document.getElementById("remove").remove();
+}
